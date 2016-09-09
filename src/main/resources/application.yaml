@@ -1,0 +1,18 @@
+datasource:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://192.168.2.215:3306/3hfund?useUnicode=true&characterEncoding=UTF-8
+  user: 3hfund
+  password: 3hfund
+  maxActive: 20
+  initialSize: 5
+  maxWait: 3000
+  minIdle: 2
+  timeBetweenEvictionRunsMillis: 3000
+  validationQuery: select 'x'
+  testWhileIdle: true
+  slowSQLMills: 3000
+  logSlowSql: true
+ 
+spring:
+  datasource:
+    #schema: import.sql
